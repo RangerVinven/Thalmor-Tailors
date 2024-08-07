@@ -5,7 +5,7 @@
     --primaryLight: var(--primary);
     --secondary: #993955;
     --secondaryLight: var(--secondary);
-    --headerColor: var(--seconday);
+    --headerColor: var(--secondary);
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
     /* 13px - 16px */
