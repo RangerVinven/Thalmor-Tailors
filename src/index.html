@@ -47,7 +47,7 @@ eleventyNavigation:
         <p class="cs-text">
             Want a custom bespoke suit to look your best? Want a quick, off-the-rack suit that still looks good? Or one that’s made-to-measure, that doesn’t break the bank but still fits you? Book an appointment today!
         </p>
-        <a href="" class="cs-button-solid">Book an Appointment</a>
+        <a href="" onclick="appointmentBooked()" class="cs-button-solid" id="Appointment-Btn">Book an Appointment</a>
     </div>
 
     <!-- Background Image -->
@@ -295,5 +295,10 @@ eleventyNavigation:
     </picture>
 </section>
 
+<script>
+    function appointmentBooked() {
+        fbq("track", "Appointment", {})
+    }
+</script>
 
 {% endblock %}
