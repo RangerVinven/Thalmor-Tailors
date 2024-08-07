@@ -46,6 +46,20 @@
         {% block head %}{% endblock %}
 
         <title>{{ title }}</title>
+    </head>
+    <body>
+        <!--Screen reader skip main nav-->
+        <!-- <a class="skip" aria-label="skip to main content" href="#main" tabindex="1">Click To Skip To Main Content</a> -->
+
+        {% include "components/header.html" %}
+        <main id="main">
+            {% block body %}{% endblock %}
+        </main>
+        {% include "components/footer.html" %}
+
+    </body>
+
+
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -63,16 +77,4 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=2062448140816400&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-    </head>
-    <body>
-        <!--Screen reader skip main nav-->
-        <!-- <a class="skip" aria-label="skip to main content" href="#main" tabindex="1">Click To Skip To Main Content</a> -->
-
-        {% include "components/header.html" %}
-        <main id="main">
-            {% block body %}{% endblock %}
-        </main>
-        {% include "components/footer.html" %}
-
-    </body>
 </html>
